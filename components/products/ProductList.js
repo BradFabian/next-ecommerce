@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function ProductList({...props}){
-    console.log(`whats this: ${JSON.stringify(props.product)}`);
+    
     const thumbnail = props.product.assets.filter((item, index) => {
         return (item.image_dimensions.width === 350);
     })[0];
